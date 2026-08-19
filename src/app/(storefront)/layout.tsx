@@ -3,13 +3,14 @@ import { Footer } from "@/components/storefront/footer";
 import { getDictionary } from "@/lib/i18n/server";
 import { getSiteSettings } from "@/services/content.service";
 import { getCurrentUser } from "@/services/auth.service";
+import { withFallback } from "@/lib/data";
 
 export default async function StorefrontLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   const [dict, settings, user] = await Promise.all([
     getDictionary(),
-    getSiteSettings(),
+    withFallback(() => getSiteSettings(), {}),
     getCurrentUser().catch(() => null),
   ]);
 

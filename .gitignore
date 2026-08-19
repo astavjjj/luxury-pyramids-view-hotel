@@ -44,3 +44,6 @@ next-env.d.ts
 # logs / local artifacts
 *.log
 *.tsbuildinfo
+
+.vercel
+.env*

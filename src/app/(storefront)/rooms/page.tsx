@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { listRooms } from "@/repositories/room.repository";
 import { Container, Eyebrow } from "@/components/ui/section";
 import { RoomCard } from "@/components/storefront/room-card";
+import { withFallback } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Rooms",
@@ -9,10 +10,10 @@ export const metadata: Metadata = {
     "Rooms at Luxury Pyramids View Hotel — considered spaces on the Giza Plateau with views of the Pyramids.",
 };
 
-export const revalidate = 60;
+export const dynamic = "force-dynamic";
 
 export default async function RoomsPage() {
-  const rooms = await listRooms();
+  const rooms = await withFallback(() => listRooms(), []);
 
   return (
     <>

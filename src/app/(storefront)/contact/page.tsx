@@ -1,16 +1,17 @@
 import type { Metadata } from "next";
 import { Container, Eyebrow } from "@/components/ui/section";
 import { getSiteSettings } from "@/services/content.service";
+import { withFallback } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Contact",
   description: "Contact Luxury Pyramids View Hotel.",
 };
 
-export const revalidate = 60;
+export const dynamic = "force-dynamic";
 
 export default async function ContactPage() {
-  const settings = await getSiteSettings();
+  const settings = await withFallback(() => getSiteSettings(), {});
 
   return (
     <>

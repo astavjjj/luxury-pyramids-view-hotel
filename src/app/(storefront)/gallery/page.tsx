@@ -1,16 +1,17 @@
 import type { Metadata } from "next";
 import { listRooms } from "@/repositories/room.repository";
 import { Container, Eyebrow } from "@/components/ui/section";
+import { withFallback } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Gallery",
   description: "Gallery of Luxury Pyramids View Hotel.",
 };
 
-export const revalidate = 60;
+export const dynamic = "force-dynamic";
 
 export default async function GalleryPage() {
-  const rooms = await listRooms();
+  const rooms = await withFallback(() => listRooms(), []);
   const images = [
     "/media/demo/hero-pyramids.svg",
     "/media/demo/dining.svg",

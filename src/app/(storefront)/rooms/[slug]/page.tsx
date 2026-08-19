@@ -4,6 +4,9 @@ import { getRoomBySlug } from "@/repositories/room.repository";
 import { Container, Eyebrow } from "@/components/ui/section";
 import { AvailabilitySearch } from "@/components/booking/availability-search";
 import { formatPrice } from "@/lib/utils";
+import { withFallback } from "@/lib/data";
+
+export const dynamic = "force-dynamic";
 
 export async function generateMetadata({
   params,
@@ -11,7 +14,7 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const room = await getRoomBySlug(slug);
+  const room = await withFallback(() => getRoomBySlug(slug), null);
   if (!room) return { title: "Room" };
   return {
     title: room.name,
@@ -21,7 +24,7 @@ export async function generateMetadata({
 
 export default async function RoomPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const room = await getRoomBySlug(slug);
+  const room = await withFallback(() => getRoomBySlug(slug), null);
   if (!room) notFound();
 
   const avgRating =

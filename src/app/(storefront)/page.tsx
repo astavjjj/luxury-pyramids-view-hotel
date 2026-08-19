@@ -5,14 +5,15 @@ import { getSiteSettings } from "@/services/content.service";
 import { listRooms } from "@/repositories/room.repository";
 import { Container, Eyebrow } from "@/components/ui/section";
 import { formatPrice } from "@/lib/utils";
+import { withFallback } from "@/lib/data";
 
-export const revalidate = 60;
+export const dynamic = "force-dynamic";
 
 export default async function HomePage() {
   const [dict, settings, rooms] = await Promise.all([
     getDictionary(),
-    getSiteSettings(),
-    listRooms(),
+    withFallback(() => getSiteSettings(), {}),
+    withFallback(() => listRooms(), []),
   ]);
 
   const featured = rooms.slice(0, 3);

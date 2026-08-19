@@ -1,19 +1,20 @@
 import type { Metadata } from "next";
 import { db } from "@/lib/db";
 import { Container, Eyebrow } from "@/components/ui/section";
+import { withFallback } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Offers",
   description: "Seasonal offers and packages at Luxury Pyramids View Hotel.",
 };
 
-export const revalidate = 60;
+export const dynamic = "force-dynamic";
 
 export default async function OffersPage() {
-  const offers = await db.offer.findMany({
-    where: { active: true },
-    orderBy: { createdAt: "desc" },
-  });
+  const offers = await withFallback(
+    () => db.offer.findMany({ where: { active: true }, orderBy: { createdAt: "desc" } }),
+    [],
+  );
 
   return (
     <>
