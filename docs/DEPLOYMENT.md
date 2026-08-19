@@ -2,6 +2,21 @@
 
 How to take this project from demo to production.
 
+## 0. Current live status (August 2026)
+
+| Item | Status |
+| --- | --- |
+| Live URL | https://luxury-pyramids-view-hotel.vercel.app |
+| GitHub | https://github.com/astavjjj/luxury-pyramids-view-hotel |
+| Hosted database | Neon (via Vercel Marketplace integration, project `solitary-unit-82820074`) |
+| Schema + demo seed | Applied and seeded (6 rooms, 2 offers, 1 staff) |
+| `DATABASE_URL`, `AUTH_SECRET`, `NEXT_PUBLIC_SITE_URL`, `PAYMENT_PROVIDER=manual` | Set on Vercel (Production + Preview) |
+| Payments / Email / OAuth | **Not configured** — `manual` / `console` only |
+
+Storefront pages render real DB data; bookings are created in Neon as
+`PAYMENT_PENDING`. The only remaining items for a real launch are client
+credentials (payment gateway, email, Google OAuth) and real hotel content.
+
 ## 1. Deploy to Vercel
 
 1. Push the repository to GitHub.
