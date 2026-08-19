@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#efe6d6"/><stop offset="100%" stop-color="#c9b28d"/></linearGradient></defs>
+  <rect width="1400" height="900" fill="url(#bg)"/>
+  <rect x="200" y="140" width="420" height="280" fill="#fffdf8" stroke="#c9b28d" stroke-width="2"/>
+  <rect x="215" y="165" width="390" height="230" fill="#e6dbc4"/>
+  <rect x="740" y="180" width="420" height="280" fill="#fffdf8" stroke="#c9b28d" stroke-width="2"/>
+  <rect x="755" y="205" width="390" height="230" fill="#e2d5ba"/>
+  <rect x="470" y="520" width="420" height="260" fill="#fffdf8" stroke="#c9b28d" stroke-width="2"/>
+  <rect x="485" y="545" width="390" height="210" fill="#eadfc9"/>
+  <text x="700" y="840" text-anchor="middle" font-family="Georgia, serif" font-size="30" fill="#8a6a44" letter-spacing="12" opacity="0.6">DEMO ASSET</text>
+</svg>

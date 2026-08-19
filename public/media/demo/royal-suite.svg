@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#dccdb4"/><stop offset="100%" stop-color="#a8875d"/></linearGradient></defs>
+  <rect width="1400" height="900" fill="url(#bg)"/>
+  <circle cx="1130" cy="210" r="95" fill="#f5ecd8" opacity="0.8"/>
+  <polygon points="40,900 380,380 720,900" fill="#6d5236" opacity="0.5"/>
+  <polygon points="300,900 620,500 940,900" fill="#7a5c3c" opacity="0.75"/>
+  <polygon points="560,900 830,620 1100,900" fill="#5f4a30" opacity="0.6"/>
+  <rect x="760" y="250" width="440" height="320" fill="#fffdf8" stroke="#c9b28d" stroke-width="2"/>
+  <rect x="775" y="275" width="410" height="270" fill="#e6dbc4"/>
+  <text x="700" y="815" text-anchor="middle" font-family="Georgia, serif" font-size="30" fill="#8a6a44" letter-spacing="12" opacity="0.6">DEMO ASSET</text>
+</svg>
