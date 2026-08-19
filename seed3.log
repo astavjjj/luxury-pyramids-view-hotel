@@ -1,8 +1,0 @@
-﻿
-> luxury-pyramids-hotel@0.1.0 db:seed
-> tsx prisma/seed.ts
-
-Seeding demo data (DEMO ONLY)ΓÇª
-Home page id: cmszlwwfg0015v3x48wlzat47
-Admin staff (DEMO): admin@example.com password: ChangeMe123!
-Done seeding DEMO data.

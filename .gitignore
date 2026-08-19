@@ -41,8 +41,10 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# logs / local artifacts`n*.log`n*.err
-*.tsbuildinfo
+# logs / local artifacts
+*.log
+*.err
 
 .vercel
 .env*
+!.env.example
