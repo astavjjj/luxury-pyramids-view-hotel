@@ -1,0 +1,78 @@
+▲ Next.js 16.3.1 (webpack)
+- Environments: .env
+⚠ Attempted to load @next/swc-win32-x64-msvc, but an error occurred: \\?\E:\luxury-pyramids-hotel\node_modules\@next\swc-win32-x64-msvc\next-swc.win32-x64-msvc.node is not a valid Win32 application.
+\\?\E:\luxury-pyramids-hotel\node_modules\@next\swc-win32-x64-msvc\next-swc.win32-x64-msvc.node
+✓ Running next.config.ts took 2.8s
+  Skipping creating a lockfile at E:\luxury-pyramids-hotel\.next\lock because we're using WASM bindings
+
+  Creating an optimized production build ...
+⚠ Attempted to load @next/swc-win32-x64-msvc, but an error occurred: \\?\E:\luxury-pyramids-hotel\node_modules\@next\swc-win32-x64-msvc\next-swc.win32-x64-msvc.node is not a valid Win32 application.
+\\?\E:\luxury-pyramids-hotel\node_modules\@next\swc-win32-x64-msvc\next-swc.win32-x64-msvc.node
+⚠ Attempted to load @next/swc-win32-x64-msvc, but an error occurred: \\?\E:\luxury-pyramids-hotel\node_modules\@next\swc-win32-x64-msvc\next-swc.win32-x64-msvc.node is not a valid Win32 application.
+\\?\E:\luxury-pyramids-hotel\node_modules\@next\swc-win32-x64-msvc\next-swc.win32-x64-msvc.node
+⚠ Attempted to load @next/swc-win32-x64-msvc, but an error occurred: \\?\E:\luxury-pyramids-hotel\node_modules\@next\swc-win32-x64-msvc\next-swc.win32-x64-msvc.node is not a valid Win32 application.
+\\?\E:\luxury-pyramids-hotel\node_modules\@next\swc-win32-x64-msvc\next-swc.win32-x64-msvc.node
+✓ Compiled successfully in 101s
+  Running TypeScript ...
+  Finished TypeScript in 115s ...
+  Collecting page data using 1 worker ...
+⚠ Attempted to load @next/swc-win32-x64-msvc, but an error occurred: \\?\E:\luxury-pyramids-hotel\node_modules\@next\swc-win32-x64-msvc\next-swc.win32-x64-msvc.node is not a valid Win32 application.
+\\?\E:\luxury-pyramids-hotel\node_modules\@next\swc-win32-x64-msvc\next-swc.win32-x64-msvc.node
+  Generating static pages using 1 worker (0/35) ...
+  Generating static pages using 1 worker (8/35) 
+  Generating static pages using 1 worker (17/35) 
+  Generating static pages using 1 worker (26/35) 
+✓ Generating static pages using 1 worker (35/35) in 28.6s
+  Finalizing page optimization ...
+  Collecting build traces ...
+
+Route (app)                     Revalidate  Expire
+┌ ƒ /
+├ ƒ /_not-found
+├ ƒ /about
+├ ƒ /account
+├ ƒ /account/bookings/[id]
+├ ƒ /admin
+├ ƒ /admin/bookings
+├ ƒ /admin/bookings/[id]
+├ ƒ /admin/login
+├ ƒ /admin/rooms
+├ ƒ /admin/rooms/[id]/edit
+├ ƒ /admin/rooms/new
+├ ƒ /api/admin/bookings
+├ ƒ /api/admin/bookings/[id]
+├ ƒ /api/admin/login
+├ ƒ /api/admin/logout
+├ ƒ /api/admin/rooms
+├ ƒ /api/admin/rooms/[id]
+├ ƒ /api/auth/login
+├ ƒ /api/auth/logout
+├ ƒ /api/auth/register
+├ ƒ /api/booking
+├ ƒ /api/booking/availability
+├ ƒ /api/locale
+├ ƒ /auth/login
+├ ƒ /auth/register
+├ ƒ /booking
+├ ƒ /booking/checkout
+├ ƒ /booking/confirmation/[id]
+├ ƒ /cancellation-policy
+├ ƒ /contact
+├ ƒ /dining
+├ ƒ /experiences
+├ ƒ /gallery
+├ ƒ /location
+├ ƒ /offers
+├ ƒ /privacy
+├ ○ /robots.txt
+├ ƒ /rooms
+├ ƒ /rooms/[slug]
+├ ○ /sitemap.xml                        1h      1y
+├ ƒ /spa
+├ ƒ /suites
+└ ƒ /terms
+
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+

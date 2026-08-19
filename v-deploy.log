@@ -1,0 +1,26 @@
+{
+  "status": "ok",
+  "deployment": {
+    "id": "dpl_9so43i5pG9nqfWoiqLTY62vFvPcM",
+    "url": "https://luxury-pyramids-view-hotel-o8ht8ntbh-astavjjj1.vercel.app",
+    "inspectorUrl": "https://vercel.com/astavjjj1/luxury-pyramids-view-hotel/9so43i5pG9nqfWoiqLTY62vFvPcM",
+    "readyState": "READY",
+    "target": "production",
+    "deploymentApiUrl": "https://api.vercel.com/v13/deployments/dpl_9so43i5pG9nqfWoiqLTY62vFvPcM"
+  },
+  "message": "Deployment luxury-pyramids-view-hotel-o8ht8ntbh-astavjjj1.vercel.app ready.",
+  "next": [
+    {
+      "command": "vercel curl https://luxury-pyramids-view-hotel-o8ht8ntbh-astavjjj1.vercel.app",
+      "when": "Verify deployment, including when Deployment Protection is enabled"
+    },
+    {
+      "command": "vercel inspect luxury-pyramids-view-hotel-o8ht8ntbh-astavjjj1.vercel.app",
+      "when": "Inspect deployment"
+    },
+    {
+      "command": "vercel deploy --prod",
+      "when": "Promote to production"
+    }
+  ]
+}
